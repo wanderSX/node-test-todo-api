@@ -26,7 +26,7 @@ app.get('/todos', (req, res) => {
 		.then((todos) => {
 			res.send({todos});
 		}, (e) => {
-			res.statur(400).send(e);
+			res.status(400).send(e);
 		})
 });
 
